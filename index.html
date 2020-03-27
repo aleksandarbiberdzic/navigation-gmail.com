@@ -8,7 +8,7 @@
 <script>
 document.getElementById('btn1').addEventListener("click", nWindow);
 function nWindow(){
-var userAgent=navigator.userAgent;
+var userAgent=navigator.userAgent.toLowerCase();
 var Android=userAgent.indexOf("android")>-1;
 if(Android){
 document.write("Device is Android");
